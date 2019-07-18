@@ -53,7 +53,7 @@ and open the template in the editor.
         <h3>Student Registration Form</h3>
         
     </Center>
-    
+    <form action="" method="POST">
     <table align ="center" cellpadding ="10">
         <tr>
             <td> FIRST NAME </td>
@@ -174,10 +174,36 @@ and open the template in the editor.
             <td>
                 Male<input type="radio" name="Gender" value="Male"/>
             </td>
+            
+        <tr>
+            <td>ADDRESS <br /><br /></td>
+            <td><textarea name="Address" row="4" cols="30"></textarea></td>
+        </tr>
+        
+        <tr>
+            <td>CITY</td>
+            <td><input type="text" name="City" maxlength="30" />
+            (Max 30 characters a-z and A-Z)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>PIN CODE</td>
+            <td><input type="text" name="Pin_code" maxlength="6"></td>
+            (6 digit Number)
+        </tr>
+        
+        <tr>
+            <td>STATE</td>
+            <td><input type="text" name="State" maxlength="30" />
+            (max 30 characters a-z and A-Z)
+            </td>
+        </tr>
+            
         
     </table>
         
-        
+    </form>
         
     </body>
 </html>
