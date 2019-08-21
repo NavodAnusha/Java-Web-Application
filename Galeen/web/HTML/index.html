@@ -7,6 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' id='main-style-css' href="../CSS/h3.css" type='text/css' media='all'/>
         <title>Home</title>
         <style>
             ul {
@@ -153,7 +154,7 @@ and open the template in the editor.
                 padding: 20px;
                 /*text-align: center;*/
             }
-            
+
             /*Font Color*/
             h1{
                 color: red;
@@ -161,14 +162,52 @@ and open the template in the editor.
 
 
         </style>
+        <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
     </head>
     <body>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Partners.html">Partners</a></li>
-            <!--<li><a href="Testimonials.html">Testimonials</a></li>-->
+            <!--<li><a href="#contact">Testimonials</a></li>-->
             <li><a href="OurServices.html">Our Services</a></li>
-            <li><a href="contact.html"Contact></a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li style="float:right"><a class="active" href="AboutUs.html">About</a></li>
         </ul>
 
@@ -177,19 +216,19 @@ and open the template in the editor.
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="Image/Copy of Tips for Going Abroad.jpg" style="width:85%">
+                <img src="../Image/Copy of Tips for Going Abroad.jpg" style="width:85%">
 
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="Image/istock-698900018.jpg" style="width:100%">
+                <img src="../Image/istock-698900018.jpg" style="width:100%">
 
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="Image/study-abroad.png" style="width:100%">
+                <img src="../Image/study-abroad.png" style="width:100%">
 
             </div>
 
@@ -204,57 +243,60 @@ and open the template in the editor.
 
 
         <br><br>
-        <div class="bg-image"</div>
-        <div class="bg-text">
-            <center> <h1>Why ICBT Study Abroad?</h1></center>
+        <div class="container">
+            <img src="../Image/black and white world maps continents time zones world map cartography 2560x1600 wallpaper_www.knowledgehi.com_50.jpg"  width="1519"  height="500" >
+            <div class="top-left">
             
-            <p>we are an unit of ICBT Campus to provide guidance, consultation and placement services to students for overseas. ICBT study Abroad staff
-            provides professional and Quality advice to help you find the best option based on your academic and financial requirements.</p>
+            <center> <h1>Why Study Abroad?</h1></center>
+
+            <p>we are an unit of EduCan consulting center to provide guidance, consultation and placement services to students for overseas. EduCan study Abroad staff
+                provides professional and Quality advice to help you find the best option based on your academic and financial requirements.</p>
             <br>
             <h2>Our staff offers advice and assistance in</h2>
-            
+
             <p> &#9679; Consultation and assistance on selecting the best and accurate study option 
-            <br>
-            &#9679; Secure placement at a suitable university to meet the required qualification and finances.
-            <br>
-            &#9679; Preparing Application and Visa documentations 
-            <br>
-            &#9679; Assist students in the entire Visa application and process.
-            <br>
-            &#9679; Pre-departure briefing. 
-            <br> 
-            &#9679; Arranging accommodation.
-            <br>
-            &#9679; Organize Meet & great events with Sri Lanka students on campus. 
-            <br><br>
+                <br>
+                &#9679; Secure placement at a suitable university to meet the required qualification and finances.
+                <br>
+                &#9679; Preparing Application and Visa documentations 
+                <br>
+                &#9679; Assist students in the entire Visa application and process.
+                <br>
+                &#9679; Pre-departure briefing. 
+                <br> 
+                &#9679; Arranging accommodation.
+                <br>
+                &#9679; Organize Meet & great events with Sri Lanka students on campus. 
+                <br><br>
             <h2>ALL OUR SERVICE ARE ABSOLUTELY FREE!!!</h2>
-           
-            </p>
-        </div>
+
+        </p>
+            </div>
+    </div>
 
 
-        <script>
-            var slideIndex = 0;
-            showSlides();
+    <script>
+        var slideIndex = 0;
+        showSlides();
 
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                setTimeout(showSlides, 2000); // Change image every 2 seconds
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-        </script>
-    </body>
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
 </html>
